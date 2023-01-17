@@ -12,7 +12,7 @@ data "external" "user_data" {
 		"-c",
 		<<-EOF
 			input_dir='${abspath( var.input_dir )}'
-			output_dir='${abspath( var.output_dir )}'
+			output_dir='${abspath( var.output_dir )}/${random_uuid.main.id}'
 			template_extension='.tftpl'
 			
 			files=( ${join( " ", [ for file in var.files : "'${file}'" ] )} )
@@ -47,4 +47,9 @@ data "external" "user_data" {
 			echo '{"content_base64":"'$${content_base64}'"}'
 		EOF
 	]
+}
+
+
+resource "random_uuid" "main" {
+	
 }

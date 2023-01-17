@@ -49,9 +49,9 @@ variable "input_dir" {
 
 
 variable "output_dir" {
-	description = "Directory where rendered templates will be saved."
+	description = "Temporary directory where rendered templates will be saved."
 	type = string
-	default = "/tmp/terraform"
+	default = "/tmp/terraform/user-data"
 }
 
 
