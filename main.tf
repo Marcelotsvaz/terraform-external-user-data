@@ -6,7 +6,7 @@
 
 
 
-data "external" "user_data" {
+data external user_data {
 	program = [
 		"bash",
 		"-c",
@@ -50,6 +50,6 @@ data "external" "user_data" {
 }
 
 
-resource "random_uuid" "main" {
+resource random_uuid main {
 	
 }
