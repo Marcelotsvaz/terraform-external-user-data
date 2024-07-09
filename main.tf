@@ -1,11 +1,3 @@
-# 
-# VAZ Projects
-# 
-# 
-# Author: Marcelo Tellier Sartori Vaz <marcelotsvaz@gmail.com>
-
-
-
 data external user_data {
 	program = [
 		"bash",

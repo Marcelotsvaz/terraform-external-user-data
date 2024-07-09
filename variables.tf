@@ -1,11 +1,3 @@
-# 
-# VAZ Projects
-# 
-# 
-# Author: Marcelo Tellier Sartori Vaz <marcelotsvaz@gmail.com>
-
-
-
 variable files {
 	description = "Raw files that will be added to the archive."
 	type = set( string )
